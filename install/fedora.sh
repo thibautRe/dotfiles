@@ -5,7 +5,7 @@ sudo -v
 echo "Setting up Fedora..."
 
 # Fedora
-if ! type "dnf" > /dev/null; then
+if type "dnf" > /dev/null; then
 	if ! type "zsh" > /dev/null; then
 		echo "Installing zsh..."
 		sudo dnf install -y zsh
@@ -22,6 +22,9 @@ if ! type "dnf" > /dev/null; then
 		echo "Installing ohmyzsh..."
 		zsh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 	fi
+
+	echo "Installing IBM Plex Fonts..."
+	sudo dnf install -y ibm-plex-fonts-all
 fi
 
 if [ ! -d "$HOME/git" ]; then
