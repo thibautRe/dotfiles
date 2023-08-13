@@ -1,7 +1,8 @@
-export ZSH="$HOME/.oh-my-zsh"
+#!/bin/sh
 
 # ---- Oh My Zsh ----
 
+export ZSH="$HOME/.oh-my-zsh"
 # Disable OMZ's theme in favour or Pure Prompt
 ZSH_THEME=""
 
