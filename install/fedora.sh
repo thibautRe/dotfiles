@@ -13,6 +13,11 @@ if ! type "dnf" > /dev/null; then
 		sudo lchsh $USER
 	fi
 
+	if ! type "kitty" > /dev/null; then
+		echo "Installing kitty..."
+		sudo dnf install -y kitty
+	fi
+
 	if test ! $(which omz); then
 		echo "Installing ohmyzsh..."
 		zsh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
@@ -27,6 +32,7 @@ git config --global user.name "Thibaut Remy"
 git config --global user.email "thibaut@thibaut.re"
 
 # setup dotfiles
+echo "Setting up symlink to dotfiles..."
 
 # zshrc
 rm -rf $HOME/.zshrc
@@ -38,3 +44,9 @@ mkdir $HOME/.config/helix
 mkdir $HOME/.config/helix/themes
 ln -s -r helix/config.toml $HOME/.config/helix/config.toml
 ln -s -r helix/themes/autumn_night_transparent.toml $HOME/.config/helix/themes/autumn_night_transparent.toml
+
+# kitty terminal
+rm -rf $HOME/.config/kitty
+mkdir $HOME/.config/kitty
+ln -s -r kitty/kitty.conf $HOME/.config/kitty/kitty.conf
+
