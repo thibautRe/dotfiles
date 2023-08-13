@@ -17,14 +17,16 @@ export LANG=en_US.UTF-8
 export EDITOR='hx'
 export VISUAL="$EDITOR"
 
+export DOTFILES="$HOME/git/dotfiles"
+
 # NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  
 
-# PURE prompt https://github.com/sindresorhus/pure
-# (Installed via git in ~/.zsh/pure/)
-fpath+=($HOME/.zsh/pure)
+# PURE prompt installed as submodule 
+# https://github.com/sindresorhus/pure
+fpath+=($DOTFILES/pure)
 autoload -U promptinit; promptinit
 prompt pure
 
