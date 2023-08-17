@@ -26,6 +26,9 @@ export LANG=en_US.UTF-8
 export EDITOR='hx'
 export VISUAL="$EDITOR"
 
+path+=("$DOTFILES/diff-so-fancy")
+export PATH
+
 # NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
