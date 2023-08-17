@@ -20,9 +20,8 @@ cd dotfiles && ./install/fedora.sh
 	- oh-my-zsh
 	- pure (prompt)
 	- zsh-syntax-highlighting
-- NVM (todo)
-	- Node (todo)
-	- Yarn (todo)
+- NVM
+	- Node
 - Other
 	- git: diff-so-fancy
 

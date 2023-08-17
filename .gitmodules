@@ -10,3 +10,6 @@
 [submodule "diff-so-fancy"]
 	path = diff-so-fancy
 	url = git@github.com:so-fancy/diff-so-fancy.git
+[submodule "nvm"]
+	path = nvm
+	url = git@github.com:nvm-sh/nvm.git

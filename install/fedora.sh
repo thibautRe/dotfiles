@@ -54,6 +54,17 @@ if [ ! -d ohmyzsh/custom/plugins/zsh-syntax-highlighting ]; then
 	ln -s -r zsh-syntax-highlighting ohmyzsh/custom/plugins/zsh-syntax-highlighting
 fi
 
+# node
+if ! type "node" > /dev/null 2>&1; then
+	# setup nvm from dotfiles submodule
+	export NVM_DIR="$HOME/git/dotfiles/nvm"
+	[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+	[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+	echo "Installing node..."
+	nvm install node > /dev/null
+	nvm use node
+fi
 # setup dotfiles
 echo "Setting up symlink to dotfiles..."
 
