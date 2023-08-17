@@ -54,4 +54,5 @@ ln -s -r helix/themes/autumn_night_transparent.toml $HOME/.config/helix/themes/a
 rm -rf $HOME/.config/kitty
 mkdir $HOME/.config/kitty
 ln -s -r kitty/kitty.conf $HOME/.config/kitty/kitty.conf
+ln -s -r kitty/current-theme.conf $HOME/.config/kitty/current-theme.conf
 
