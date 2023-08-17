@@ -38,4 +38,4 @@ alias helixconfig="hx ~/.config/helix/config.toml"
 alias ohmyzsh="hx ~/.oh-my-zsh"
 alias vim="hx"
 alias gs="git status"
-
+alias icat="kitty +kitten icat"
