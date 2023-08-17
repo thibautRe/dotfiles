@@ -23,10 +23,13 @@ cd dotfiles && ./install/fedora.sh
 - NVM (todo)
 	- Node (todo)
 	- Yarn (todo)
+- Other
+	- git: diff-so-fancy
 
 ### Configurations
 
 - kitty
+	- set theme
 	- set font to IBM Plex Mono
 	- set transparent background
 - helix
