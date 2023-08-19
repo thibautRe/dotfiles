@@ -65,6 +65,13 @@ if ! type "node" > /dev/null 2>&1; then
 	nvm install node > /dev/null
 	nvm use node
 fi
+
+# typescript-language-server
+if ! type "typescript-language-server" > /dev/null 2>&1; then
+	echo "Installing typescript-language-server..."
+	npm i -g typescript typescript-language-server
+fi;
+
 # setup dotfiles
 echo "Setting up symlink to dotfiles..."
 

@@ -22,6 +22,7 @@ cd dotfiles && ./install/fedora.sh
 	- zsh-syntax-highlighting
 - NVM
 	- Node
+	- typescript-language-server
 - Other
 	- git: diff-so-fancy
 
