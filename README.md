@@ -23,7 +23,9 @@ cd dotfiles && ./install/fedora.sh
 - NVM
 	- Node
 	- typescript-language-server
-- Rustup
+- Rust
+  - rustup (default toolchain)
+  - rust-analyzer
 - Other
 	- git: diff-so-fancy
 
