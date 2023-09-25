@@ -27,9 +27,11 @@ fi
 if ! type "rustup" > /dev/null 2>&1; then
 	echo "Installing rustup..."
 	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --no-modify-path --profile minimal -q -y
-	# install rust-analyser, required by Helix
-	curl -L https://github.com/rust-lang/rust-analyzer/releases/latest/download/rust-analyzer-x86_64-unknown-linux-gnu.gz | gunzip -c - > $HOME/.cargo/bin/rust-analyzer
-	chmod +x $HOME/.cargo/bin/rust-analyzer
+fi
+
+if ! type "rust-analyzer" > /dev/null 2>&1; then
+	echo "Installing rust-analyzer..."
+	rustup component add rust-analyzer
 fi
 
 if [ ! -d "$HOME/git" ]; then
