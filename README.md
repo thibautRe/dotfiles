@@ -23,6 +23,7 @@ cd dotfiles && ./install/fedora.sh
 - NVM
 	- Node
 	- typescript-language-server
+- Rustup
 - Other
 	- git: diff-so-fancy
 

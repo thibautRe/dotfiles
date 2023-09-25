@@ -24,6 +24,11 @@ if type "dnf" > /dev/null; then
 	fi
 fi
 
+if ! type "rustup" > /dev/null 2>&1; then
+	echo "Installing rustup..."
+	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --no-modify-path --profile minimal -q -y
+fi
+
 if [ ! -d "$HOME/git" ]; then
 	mkdir $HOME/git
 fi

@@ -27,6 +27,7 @@ export EDITOR='hx'
 export VISUAL="$EDITOR"
 
 path+=("$DOTFILES/diff-so-fancy")
+path+=("$HOME/.cargo/bin")
 export PATH
 
 # NVM
