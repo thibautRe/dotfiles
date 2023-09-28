@@ -23,6 +23,7 @@ cd dotfiles && ./install/fedora.sh
 - NVM
 	- Node
 	- typescript-language-server
+	- prettier
 - Rust
   - rustup (default toolchain)
   - rust-analyzer
@@ -38,6 +39,7 @@ cd dotfiles && ./install/fedora.sh
 - helix
 	- set theme
 	- set cursor to a bar in edit mode
+	- set prettier as default formatter for JS/TS
 - zsh
 	- set oh-my-zsh
 	- set aliases

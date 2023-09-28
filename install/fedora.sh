@@ -76,11 +76,18 @@ if ! type "node" > /dev/null 2>&1; then
 	nvm use node
 fi
 
+# prettier
+if ! type "prettier" > /dev/null 2>&1; then
+	echo "Installing prettier..."
+	npm i -g prettier > /dev/null
+fi
+
 # typescript-language-server
 if ! type "typescript-language-server" > /dev/null 2>&1; then
 	echo "Installing typescript-language-server..."
 	npm i -g typescript typescript-language-server
-fi;
+fi
+# prettier
 
 # setup dotfiles
 echo "Setting up symlink to dotfiles..."
@@ -94,6 +101,7 @@ rm -rf $HOME/.config/helix
 mkdir $HOME/.config/helix
 mkdir $HOME/.config/helix/themes
 ln -s -r helix/config.toml $HOME/.config/helix/config.toml
+ln -s -r helix/languages.toml $HOME/.config/helix/languages.toml
 ln -s -r helix/themes/autumn_night_transparent.toml $HOME/.config/helix/themes/autumn_night_transparent.toml
 
 # kitty terminal
