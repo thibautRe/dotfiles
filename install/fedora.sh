@@ -15,6 +15,7 @@ if type "dnf" > /dev/null; then
 		echo "Installing zsh..."
 		sudo dnf install -y zsh
 		# make zsh default shell on Fedora
+		echo "  ** Please type '/bin/zsh' in the prompt below **"
 		sudo lchsh $USER
 	fi
 

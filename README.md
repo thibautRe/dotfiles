@@ -5,8 +5,7 @@ Collection of dotfiles
 ## Installation
 
 ```sh
-mkdir ~/git && cd ~/git && git clone https://github.com/thibautRe/dotfiles.git
-cd dotfiles && ./install/fedora.sh
+mkdir ~/git && cd ~/git && git clone --recursive https://github.com/thibautRe/dotfiles.git && cd dotfiles && ./install/fedora.sh
 ```
 
 ## Contents
