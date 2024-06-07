@@ -12,3 +12,11 @@ auto-format = true
 name = "tsx"
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
+
+[[language]]
+name = "html"
+file-types = ["html", "webc"]
+
+[[language]]
+name = "markdown"
+soft-wrap = { enable = true, wrap-at-text-width = true }
