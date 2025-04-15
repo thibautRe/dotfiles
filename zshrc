@@ -33,7 +33,7 @@ export PATH
 # NVM
 export NVM_DIR="$DOTFILES/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # all aliases
 alias zshconfig="hx ~/.zshrc"
@@ -43,3 +43,4 @@ alias ohmyzsh="hx ~/.oh-my-zsh"
 alias vim="hx"
 alias gs="git status"
 alias icat="kitty +kitten icat"
+alias copy-need-raw="node $DOTFILES/scripts/copy-raw-files/index.mjs"
