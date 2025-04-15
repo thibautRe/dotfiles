@@ -12,4 +12,4 @@ node index.mjs
 copy-need-raw
 ```
 
-Paste the image list after running the script. You need to paste it as one line (use VSCode integrated terminal).
+Paste the image list after running the script. You need to paste it as one line (VSCode terminal or kitty works)
