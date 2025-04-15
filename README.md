@@ -16,29 +16,31 @@ mkdir ~/git && cd ~/git && git clone --recursive https://github.com/thibautRe/do
 - helix (editor)
 - IBM plex fonts
 - zsh
-	- oh-my-zsh
-	- pure (prompt)
-	- zsh-syntax-highlighting
+  - oh-my-zsh
+  - pure (prompt)
+  - zsh-syntax-highlighting
 - NVM
-	- Node
-	- typescript-language-server
-	- prettier
+  - Node
+  - typescript-language-server
+  - prettier
 - Rust
   - rustup (default toolchain)
   - rust-analyzer
+- Scripts
+  - copy-need-raw
 - Other
-	- git: diff-so-fancy
+  - git: diff-so-fancy
 
 ### Configurations
 
 - kitty
-	- set theme
-	- set font to IBM Plex Mono
-	- set transparent background
+  - set theme
+  - set font to IBM Plex Mono
+  - set transparent background
 - helix
-	- set theme
-	- set cursor to a bar in edit mode
-	- set prettier as default formatter for JS/TS
+  - set theme
+  - set cursor to a bar in edit mode
+  - set prettier as default formatter for JS/TS
 - zsh
-	- set oh-my-zsh
-	- set aliases
+  - set oh-my-zsh
+  - set aliases
