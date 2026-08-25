@@ -1,1 +1,5 @@
 *.bak
+scripts/heal-sensor/tests
+scripts/heal-sensor/.venv
+
+__pycache__
