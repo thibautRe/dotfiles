@@ -44,3 +44,18 @@ alias vim="hx"
 alias gs="git status"
 alias icat="kitty +kitten icat"
 alias copy-need-raw="node $DOTFILES/scripts/copy-need-raw/index.mjs"
+alias ssh-eye="ssh ubuntu@57.129.77.80 -p 55641"
+
+
+# see https://www.crackedthecode.co/how-to-use-your-dslr-as-a-webcam-in-linux/#debianubuntu for more commands. This starts the acquisitions of the stream
+alias mirrorless-webcam="gphoto2 --stdout --capture-movie | ffmpeg -i - -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video0"
+
+
+# >>> spawn >>>
+export PATH="/home/thibaut/.local/bin:$PATH"
+# <<< spawn <<<
+
+# >>> spawn >>>
+export PATH="/home/thibaut/.bun/bin:$PATH"
+# <<< spawn <<<
+[ -f ~/.spawnrc ] && source ~/.spawnrc
