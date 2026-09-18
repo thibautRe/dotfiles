@@ -6,6 +6,7 @@ echo "Setting up Fedora..."
 
 # Fedora
 if type "dnf" > /dev/null; then
+        sudo dnf install -y perl-lib
 	if ! dnf list installed "ibm-plex-fonts-all" > /dev/null 2>&1; then
 		echo "Installing IBM Plex Fonts..."
 		sudo dnf install -y ibm-plex-fonts-all
