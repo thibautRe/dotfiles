@@ -34,7 +34,7 @@ const run = async () => {
                 )
                 .map(async (dir) => {
                   const contents = await readdir(
-                    path.join(dir.path, dir.name),
+                    path.join(dir.parentPath, dir.name),
                     {
                       withFileTypes: true,
                     }
@@ -71,7 +71,7 @@ const run = async () => {
 
     imports = imports.map((i) => {
       const source = i.source[0]
-      return { ...i, source: path.join(source.path, source.name) }
+      return { ...i, source: path.join(source.parentPath, source.name) }
     })
 
     for (const imp of imports) {
